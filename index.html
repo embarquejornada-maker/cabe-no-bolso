@@ -12,6 +12,24 @@
 @media(max-width:850px){.layout{grid-template-columns:minmax(0,1fr)}.side{grid-row:auto}.column{gap:14px}}
 @media(max-width:480px){.product-fields{grid-template-columns:minmax(0,1fr) minmax(90px,120px);gap:10px}.product-fields>div:first-child{grid-column:1/-1}.product-fields>div:nth-child(2){grid-column:1/2}.product-fields>div:nth-child(3){grid-column:2/3}.product-fields>div.full{grid-column:1/-1}.card{padding:16px}.cardhead{margin-bottom:14px}.history-heading{align-items:flex-start;flex-direction:column;gap:4px}.history-purchase{gap:7px}}
 </style>
+<style>
+.layout,.column,.side,.card{min-width:0}
+.finance-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card-grid .money-wrap input{padding-left:40px}
+#planPurchase{width:100%;min-height:48px;display:flex;align-items:center;justify-content:center;white-space:normal;text-align:center;line-height:1.3}
+#saveRow{display:none;margin-top:12px}
+#saveSimulation{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;white-space:normal;text-align:center;line-height:1.3}
+.save-help{display:block;margin:8px 2px 0}
+@media(max-width:850px){.layout{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:520px){
+.shell{padding-left:12px;padding-right:12px}
+.layout,.side{gap:14px}
+.card{padding:16px}
+.finance-fields,.card-grid{grid-template-columns:minmax(0,1fr);gap:12px}
+.card-grid .field-label{font-size:12px}
+#planPurchase,#saveSimulation{width:100%;min-height:48px}
+}
+</style>
 </head>
 <body>
 <div class="shell">
